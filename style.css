@@ -1,0 +1,122 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+    font-family: pop;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: pop !important;
+}
+:root{
+ --White: hsl(0, 0%, 100%);
+ --Off-white: hsl(0, 0%, 94%);
+ --Light-grey: hsl(0, 0%, 86%);
+ --Smokey-grey: hsl(0, 1%, 44%);
+ --Off-black: hsl(0, 0%, 8%);
+ --Purple: hsl(259, 100%, 65%);
+ --Light-red: hsl(0, 100%, 67%);
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Off-white);
+    
+}
+.card{
+    font-family: pop;
+    height: 520px;
+    width: 600px;
+    border-radius: 30px 30px 170px 30px;  
+    background-color: var(--White);  
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 40px 10px;
+    font-weight: 300px;
+    font-size: bold;
+    color: var(--Smokey-grey);
+    
+}
+.day,.month,.year{
+    display: flex;
+    flex-direction: column;
+}
+.error-msg{
+    font-size: 12px;
+    color: var(--Light-red);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.img-button{
+    border-radius: 20px;
+}
+.output{
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px;
+    line-height: 1;
+    font-weight:bolder;
+    font-style: italic;
+}
+.year-text,.month-text,.day-text{
+    color: var(--Off-black);
+}
+
+
+.output-year,.output-month,.output-day{
+    color: var(--Purple);
+}
+
+
+.box{
+    height: 60px;
+    width: 120px;
+    border-radius:8px;
+    font-size: 32px;
+    padding: 0px 10px;
+    font-weight: 900;
+}
+.day .month .year{
+    display: flex;
+    flex-direction: column;
+}
+.sub-button{
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    display: block;
+    margin: 0px ;
+    background-color: var(--Purple);
+    border: none;   
+    cursor: pointer;
+    position: inherit;    
+}
+.button-wrapper hr{
+    position: inherit;
+    width: 460px;
+    margin: 0px 2px 0px 40px;
+    height: 1px;
+    color: var(--Light-grey);
+    background-color: var(--Light-grey);
+    border: none;
+}
+.sub-button:hover{
+    background-color: var(--Smokey-grey);
+}
+.button-wrapper{
+   display: flex;
+   position: relative;
+   align-items: center;
+}
+
